@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In and Fade Out</title>
+</head>
+
+<style>
+    .btn1 {
+        padding: 6px 20px;
+        background-color: crimson;
+        border: transparent;
+        color: white;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .btn1:hover {
+        background-color: red;
+        transition: .5s ease-in-out;
+    }
+</style>
+
+<body>
+    <img src="https://c4.wallpaperflare.com/wallpaper/296/400/37/movie-avengers-infinity-war-black-panther-movie-black-widow-wallpaper-preview.jpg"
+        id="image-for-anime" alt="">
+    <input type="button" class="btn1" value="Fade In" onclick="fadein()">
+    <input type="button" class="btn1" value="Fade Out" onclick="fadeout()">
+    <script>
+        function fadein() {
+            document.getElementById("image-for-anime").style.opacity = 0; //here we are using style as a property of js and with the opacity as also a property 
+            // with 0 as a value 
+        }
+
+        function fadeout() {
+            document.getElementById("image-for-anime").style.opacity = 1;
+        }
+    </script>
+</body>
+
+</html>
